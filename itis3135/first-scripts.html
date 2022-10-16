@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link href="styles/default.css" rel="stylesheet" type="text/css" >
-    <script src="scripts/defaultscripts.js"></script>
+    
     <title>Trenton Finley || ITIS 3135</title>
 </head>
-<body>
+<body onload="showDate();">
     <header>
         <h1>Trenton Finley * ITIS3135</h1>
         <nav>
@@ -31,19 +31,26 @@
     <main>
         <h2>First Scripts</h2>
 
+        <h3 id="dateTarget"></h3>
+
         <section>
 
-            <form id="frm1" action="/action_page.php">
-                Enter Your Name: <input type="text" name="fname" id="name"><br>
+            <form id="form" action="" method="post">
+                Enter Your Name: <input type="text" name="name" id="name"><br>
                 How are you feeling: <input type="text" name="mood" id="mood"><br><br>
-                <input type="submit" onclick="greeting()" value="Submit">
+                <input type="submit" onclick="greeting();" value="Submit">
               </form>
 
+            <button onclick="greeting();">Greeting</button>
+            <button onclick="insultMe();">Insult Me</button>
+            <button onclick="complimentMe();">Compliment Me</button>
+            <button onclick="timesTable();">Times Table</button>
             <button onclick="scriptTest()"></button>
             <button onclick="scriptTest()"></button>
-            <button onclick="scriptTest()"></button>
-            <button onclick="scriptTest()"></button>
-            <button onclick="scriptTest()"></button>
+
+            <div id="messages">
+
+            </div>
     </section>
 
     </main>
@@ -68,6 +75,8 @@
 				<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
 			</a>
 		</p>
+        
     </footer>
+    <script src="scripts/defaultscripts.js"></script>
 </body>
 </html>
