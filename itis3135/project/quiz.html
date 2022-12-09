@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trenton Finley - ITIS3135 - Project Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="scripts/project.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" >
+    <link rel="stylesheet" href="styles/project.css">
+    <link href="https://fonts.cdnfonts.com/css/games" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1><span class="material-symbols-outlined">public</span>Web Application Learning</h1>
+        <nav class = "nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                
+                <li> <a href="learn.html">LEARN</a></li>
+                
+                <li><a href="quiz.html">QUIZ</a></li>
+                
+                <li><a href="upcoming.html">UPCOMING</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class='page'>Quiz Yourself</h2>
+<!-- The quiz container -->
+<div id="quiz">
+    <div id="start">
+        <button onclick="displayQuiz()">Start Quiz</button>
+    </div>
+    <!-- The quiz question -->
+    <p id="quiz-question"></p>
+  
+    <!-- The quiz answers -->
+    <ul id="quiz-answers">
+      <li>
+        <button id=answer-a onclick="checkAnswer('a')">A</button>
+      </li>
+      <li>
+        <button id=answer-b onclick="checkAnswer('b')">B</button>
+      </li>
+      <li>
+        <button id=answer-c onclick="checkAnswer('c')">C</button>
+      </li>
+    </ul>
+
+    <div id=result>
+
+    </div>
+</div>
+    </main>
+    <footer>
+        Designed by <a href = "https://webpages.charlotte.edu/tfinley5/itis3135/index.html">The Finley Inc.</a>
+    </footer>
+    <script src="script/HTMLInclude.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</body>
+</html>
